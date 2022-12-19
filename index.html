@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uzmobile.uz</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <div class="header__top__left">
+                    <a href="#" class="header__top__left__link">Jismoniy shaxslarga</a>
+                    <a href="#" class="header__top__left__link">Biznesga</a>
+                    <a href="#" class="header__top__left__link">Operatorga</a>
+                    <a href="#" class="header__top__left__link">Agentlarga</a>
+                </div>
+                <div class="header__top__right">
+                    <a href="#" class="header__top__right__link"><img src="./media/header/location.svg" alt="img"> Toshken shahri</a>
+                    <a href="#" class="header__top__right__link"><img src="./media/header/pay.svg" alt="img"> To'lovlar</a>
+                    <div class=" header__top__right__language">
+                        <div id="languageTop" class="header__top__right__link language__top">
+                            <img src="./media/header/global.svg" alt="img">
+                            <div  id="uzbek"><span>O'zbek</span></div>
+                        </div>
+                        <div class="language__bottom">
+                            <a href="#"  id="lang"><p>O'zbek</p></a>
+                            <a href="#"  id="lang"><p>Rus</p></a>
+                            <a href="#"  id="lang"><p>Ingliz</p></a>
+                        </div>
+                    </div>
+                    <a href="#" class="header__top__right__link"><img src="./media/header/help.svg" alt="img"> Yordam</a>
+                </div>
+            </div>
+        </div>
+            <div class="header__bottom">
+                <a href="./index.html"><img src="./media/logo.svg" alt="img"></a>
+                <div class="header__bottom__right">
+                    <a href="#" class="header__bottom__right__link">Shaxsiy kabinet</a>
+                    <a href="#" class="header__bottom__right__link">Internet</a>
+                    <a href="#" class="header__bottom__right__link">Uy telefoni</a>
+                    <a href="#" class="header__bottom__right__link">IP TV</a>
+                    <a href="#" class="header__bottom__right__link">Mobil aloqa</a>
+                    <a href="#" class="header__bottom__right__link">Barcha xizmatlar</a>
+                    <span class="header__bottom__right__icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    
+                </div>
+                <div class="header__bottom__bar">
+                    <span class="header__bottom__bar__icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <span class="header__bottom__bar__bars"><i class="fa-solid fa-bars"></i></span>
+                </div>
+                <div class="header__bottom__search">
+                    <input class="header__bottom__search__input"></input>
+                    <span class="header__bottom__search__icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <span class="header__bottom__search__close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </span>
+                </div>
+                
+            </div>
+        
+    </header>
+
+    <section class="navbar">
+        <div class="navbar__logo"><img src="./media/logo.svg" alt="logo"></div>
+
+        <div class="navbar__languages" onclick="closeNav()">
+            <a href="#" class="navbar__languages__link">O'zbek</a>
+            <a href="#" class="navbar__languages__link">Rus</a>
+            <a href="#" class="navbar__languages__link">Ingliz</a>
+        </div>
+
+        <div class="navbar__close" onclick="closeNav()">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="navbar__box">
+            <div class="navbar__box__left" onclick="closeNav()">
+                <a href="#" class="navbar__box__left__link">Jismoniy shaxslarga</a>
+                <a href="#" class="navbar__box__left__link">Biznesga</a>
+                <a href="#" class="navbar__box__left__link">Operatorga</a>
+                <a href="#" class="navbar__box__left__link">Agentlarga</a>
+            </div>
+            <div class="navbar__box__right" onclick="closeNav()">
+                <a href="#" class="navbar__box__right__link">Shaxsiy kabinet</a>
+                <a href="#" class="navbar__box__right__link">Internet</a>
+                <a href="#" class="navbar__box__right__link">Uy telefoni</a>
+                <a href="#" class="navbar__box__right__link">IP TV</a>
+                <a href="#" class="navbar__box__right__link">Mobil aloqa</a>
+                <a href="#" class="navbar__box__right__link">Barcha xizmatlar</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero__content">
+                <div class="hero__content__left">
+                    <h2 class="hero__title">Hohlagan balansda cheksiz gaplashing va yozishing</h2>
+                    <div class="hero__content__left__content">
+                        <div class="hero__content__left__content__box">
+                            <p class="box__top">2500MB</p>
+                            <p class="box__bottom">Internet paketlar</p>
+                        </div>
+                        <div class="hero__content__left__content__box">
+                            <p class="box__top">3000 min</p>
+                            <p class="box__bottom">Tarmoq ichida daqiqalar</p>
+                        </div>
+                        <div class="hero__content__left__content__box">
+                            <p class="box__top">1000 ta</p>
+                            <p class="box__bottom">SMS paketlar</p>
+                        </div>
+                    </div>
+                    <button href="#" type="submit" class="hero__content__left__btn">Tarifga ulanish</button>
+                </div>
+                <div class="hero__content__right">
+                    <img src="./media/graph1.svg" alt="img" class="hero__content__right__img-one">
+                    <img src="./media/man.svg" alt="img" class="hero__content__right__img-two">
+                    <img src="./media/graph2.svg" alt="img" class="hero__content__right__img-three">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="special">
+        <div class="container">
+            <p class="special__title">Maxsus xizmatlar</p>
+            <div class="special__content">
+                <div class="special__content__card-one">
+                    <p class="special__content__card-one__title">Onlayn to’lov qilish</p>
+                    <div class="special__content__card-one__content">
+                        <span class="special__content__card-one__content__text-one"><i class="fa-solid fa-mobile-screen-button"></i> Mobil aloqa</span>
+                        <span class="special__content__card-one__content__text-two"><i class="fa-solid fa-tv"></i> IP TV</span>
+                        <span class="special__content__card-one__content__text-three"><i class="fa-solid fa-wifi"></i> Internet</span>
+                    </div>
+                    <div class="special__content__card-one__form">
+                        <form action="" id="formOne" class="form-one">
+                            <label for="">998</label>
+                            <input type="number" placeholder="99 100-00-00" maxlength="9">
+                        </form>
+                        <form action="" class="form-two">
+                            <input type="number" placeholder="100 000" maxlength=8>
+                            <label for="">UZS</label>
+                        </form>
+                    </div>
+                    <div class="special__content__card-one__bottom">
+                        <button class="special__content__card-one__bottom__btn">To’lash</button>
+                        <a href="#" class="special__content_card-one__bottom__text">Maxfiylik siyosati
+                            shartlariga roziman</a>
+                    </div>
+                </div>
+                <a href="#" class="special__content__card">
+                    <div class="special__content__card__top"><img src="./media/xizmatlar/xizmat4.svg" alt="img"></div>
+                    <p class="special__content__card__text">GSM tarif <br> 
+                        rejalari</p>
+                </a>
+                <a href="#" class="special__content__card">
+                    <div class="special__content__card__top"><img src="./media/xizmatlar/xizmat5.svg" alt="img"></div>
+                    <p class="special__content__card__text">CDMA tarif <br>
+                        rejalari</p>
+                </a>
+                <a href="#"  class="special__content__card">
+                    <div class="special__content__card__top"><img src="./media/xizmatlar/xizmat6.svg" alt="img"></div>
+                    <p class="special__content__card__text">Internet tarif <br>
+                        rejalari</p>
+                    </a>
+                <a href="#" class="special__content__card">
+                    <div class="special__content__card__top"><img src="./media/xizmatlar/xizmat7.svg" alt="img"></div>
+                    <p class="special__content__card__text">GSM qoplagan <br>
+                        hudud</p>
+                </a>
+                <a href="#"  class="special__content__card">
+                    <div class="special__content__card__top"><img src="./media/xizmatlar/xizmat8.svg" alt="img"></div>
+                    <p class="special__content__card__text">Saytni TAS-IX ga tekshirish</p>
+                </a>
+                <a href="#"  class="special__content__card">
+                    <div class="special__content__card__top"><img src="./media/xizmatlar/xizmat9.svg" alt="img"></div>
+                    <p class="special__content__card__text">Internet tezlikini <br>
+                        tekshirish</p>
+                </a>
+                <a href="#"  class="special__content__card special__hidden">
+                    <div class="special__content__card__top"><img src="./media/xizmatlar/xizmat10.svg" alt="img"></div>
+                    <p class="special__content__card__text">Uzmobile <br>
+                        ofislari</p>
+                </a>
+                <a href="#"  class="special__content__card special__hidden">
+                    <div class="special__content__card__top"><img src="./media/xizmatlar/xizmat11.svg" alt="img"></div>
+                    <p class="special__content__card__text ">Telefonlar va 
+                        qurulmalar</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="popular">
+        <div class="container">
+            <div class="popular__content__top">
+                <p class="popular__content__top__title">Ommabop tarif rejalari</p>
+                <span id="addPopular" class="popular__content__top__link">Barchasi</span>
+            </div>
+            <div  class="popular__content">
+                <div class="popular__content__bottom">
+                    <div id="popularContentBottomCard" class="popular__content__bottom__card">
+                        <div class="popular__content__bottom__card__top">
+                            <span class="popular__content__bottom__card__top__title">Ishbilarmon</span>
+                            <a href="#" class="popular__content__bottom__card__top__btn">GSM TARIFLAR</a>
+                        </div>
+                        <div class="popular__content__bottom__card__center">
+                            <span class="popular__content__bottom__card__center__text"><img src="./media/tariflar/tarif1.svg" alt="img"> Cheksiz daqiqa</span>
+                            <span class="popular__content__bottom__card__center__text"><img src="./media/tariflar/tarif2.svg" alt="img"> 3 000 SMS</span>
+                            <span class="popular__content__bottom__card__center__text"><img src="./media/tariflar/tarif3.svg" alt="img"> 25 000 MB</span>
+                        </div>
+                        <div class="popular__content__bottom__card__bottom">
+                            <div class="popular__content__bottom__card__bottom__left">
+                                <p class="popular__content__bottom__card__bottom__left__top">99 000 UZS</p>
+                                <p class="popular__content__bottom__card__bottom__left__bottom">Oylik to’lovi</p>
+                            </div>
+                            <div class="popular__content__bottom__card__bottom__right">
+                                <a href="#" class="popular__content__bottom__card__bottom__right__btn__left">Batafsil</a>
+                                <a href="#" class="popular__content__bottom__card__bottom__right__btn__right special__content__card-one__bottom__btn hidden">Tarifga ulanish</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular__content__bottom__card">
+                        <div class="popular__content__bottom__card__top">
+                            <span class="popular__content__bottom__card__top__title">Uyda qoling</span>
+                            <a href="#" class="popular__content__bottom__card__top__btn">CDMA TARIFLAR</a>
+                        </div>
+                        <div class="popular__content__bottom__card__center">
+                            <span class="popular__content__bottom__card__center__text"><img src="./media/tariflar/tarif1.svg" alt="img"> Cheksiz daqiqa</span>
+                            <span class="popular__content__bottom__card__center__text"><img src="./media/tariflar/tarif2.svg" alt="img"> 120 SMS</span>
+                            <span class="popular__content__bottom__card__center__text"><img src="./media/tariflar/tarif3.svg" alt="img"> 45 000 MB</span>
+                        </div>
+                        <div class="popular__content__bottom__card__bottom">
+                            <div class="popular__content__bottom__card__bottom__left">
+                                <p class="popular__content__bottom__card__bottom__left__top">125 000 UZS</p>
+                                <p class="popular__content__bottom__card__bottom__left__bottom">Oylik to’lovi</p>
+                            </div>
+                            <div class="popular__content__bottom__card__bottom__right">
+                                <a href="#" class="popular__content__bottom__card__bottom__right__btn__left">Batafsil</a>
+                                <a href="#" class="popular__content__bottom__card__bottom__right__btn__right special__content__card-one__bottom__btn hidden">Tarifga ulanish</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular__content__bottom__card">
+                        <div class="popular__content__bottom__card__top">
+                            <span class="popular__content__bottom__card__top__title">Muloqot</span>
+                            <a href="#" class="popular__content__bottom__card__top__btn">CDMA TARIFLAR</a>
+                        </div>
+                        <div class="popular__content__bottom__card__center">
+                            <span class="popular__content__bottom__card__center__text"><img src="./media/tariflar/tarif1.svg" alt="img"> Cheksiz daqiqa</span>
+                            <span class="popular__content__bottom__card__center__text"><img src="./media/tariflar/tarif2.svg" alt="img"> Cheksiz SMS</span>
+                            <span class="popular__content__bottom__card__center__text"><img src="./media/tariflar/tarif3.svg" alt="img"> 5 000 MB</span>
+                        </div>
+                        <div class="popular__content__bottom__card__bottom">
+                            <div class="popular__content__bottom__card__bottom__left">
+                                <p class="popular__content__bottom__card__bottom__left__top">79 000 UZS</p>
+                                <p class="popular__content__bottom__card__bottom__left__bottom">Oylik to’lovi</p>
+                            </div>
+                            <div class="popular__content__bottom__card__bottom__right">
+                                <a href="#" class="popular__content__bottom__card__bottom__right__btn__left">Batafsil</a>
+                                <a href="#" class="popular__content__bottom__card__bottom__right__btn__right special__content__card-one__bottom__btn hidden">Tarifga ulanish</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular__content__bottom__card">
+                        <div class="popular__content__bottom__card__top">
+                            <span class="popular__content__bottom__card__top__title">Gamer</span>
+                            <a href="#" class="popular__content__bottom__card__top__btn">GSM TARIFLAR</a>
+                        </div>
+                        <div class="popular__content__bottom__card__center">
+                            <span class="popular__content__bottom__card__center__text"><img src="./media/tariflar/tarif1.svg" alt="img"> 120 daqiqa</span>
+                            <span class="popular__content__bottom__card__center__text"><img src="./media/tariflar/tarif2.svg" alt="img"> 100 SMS</span>
+                            <span class="popular__content__bottom__card__center__text"><img src="./media/tariflar/tarif3.svg" alt="img"> 120 000 MB</span>
+                        </div>
+                        <div class="popular__content__bottom__card__bottom">
+                            <div class="popular__content__bottom__card__bottom__left">
+                                <p class="popular__content__bottom__card__bottom__left__top">119 000 UZS</p>
+                                <p class="popular__content__bottom__card__bottom__left__bottom">Oylik to’lovi</p>
+                            </div>
+                            <div class="popular__content__bottom__card__bottom__right">
+                                <a href="#" class="popular__content__bottom__card__bottom__right__btn__left">Batafsil</a>
+                                <a href="#" class="popular__content__bottom__card__bottom__right__btn__right special__content__card-one__bottom__btn hidden">Tarifga ulanish</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="popularContentResponsive" class="popular__content__responsive">
+                    <div id="popularContentBottom" class="popular__content__bottom">
+                        <div id="popularContentBottomCard" class="popular__content__bottom__card">
+                            <div class="popular__content__bottom__card__top">
+                                <span class="popular__content__bottom__card__top__title">Ishbilarmon</span>
+                                <a href="#" class="popular__content__bottom__card__top__btn">GSM TARIFLAR</a>
+                            </div>
+                            <div class="popular__content__bottom__card__center">
+                                <span class="popular__content__bottom__card__center__text"><img src="./media/tariflar/tarif1.svg" alt="img"> Cheksiz daqiqa</span>
+                                <span class="popular__content__bottom__card__center__text"><img src="./media/tariflar/tarif2.svg" alt="img"> 3 000 SMS</span>
+                                <span class="popular__content__bottom__card__center__text"><img src="./media/tariflar/tarif3.svg" alt="img"> 25 000 MB</span>
+                            </div>
+                            <div class="popular__content__bottom__card__bottom">
+                                <div class="popular__content__bottom__card__bottom__left">
+                                    <p class="popular__content__bottom__card__bottom__left__top">99 000 UZS</p>
+                                    <p class="popular__content__bottom__card__bottom__left__bottom">Oylik to’lovi</p>
+                                </div>
+                                <div class="popular__content__bottom__card__bottom__right">
+                                    <a href="#" class="popular__content__bottom__card__bottom__right__btn__left">Batafsil</a>
+                                    <a href="#" class="popular__content__bottom__card__bottom__right__btn__right special__content__card-one__bottom__btn hidden">Tarifga ulanish</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular__content__bottom__card">
+                            <div class="popular__content__bottom__card__top">
+                                <span class="popular__content__bottom__card__top__title">Uyda qoling</span>
+                                <a href="#" class="popular__content__bottom__card__top__btn">CDMA TARIFLAR</a>
+                            </div>
+                            <div class="popular__content__bottom__card__center">
+                                <span class="popular__content__bottom__card__center__text"><img src="./media/tariflar/tarif1.svg" alt="img"> Cheksiz daqiqa</span>
+                                <span class="popular__content__bottom__card__center__text"><img src="./media/tariflar/tarif2.svg" alt="img"> 120 SMS</span>
+                                <span class="popular__content__bottom__card__center__text"><img src="./media/tariflar/tarif3.svg" alt="img"> 45 000 MB</span>
+                            </div>
+                            <div class="popular__content__bottom__card__bottom">
+                                <div class="popular__content__bottom__card__bottom__left">
+                                    <p class="popular__content__bottom__card__bottom__left__top">125 000 UZS</p>
+                                    <p class="popular__content__bottom__card__bottom__left__bottom">Oylik to’lovi</p>
+                                </div>
+                                <div class="popular__content__bottom__card__bottom__right">
+                                    <a href="#" class="popular__content__bottom__card__bottom__right__btn__left">Batafsil</a>
+                                    <a href="#" class="popular__content__bottom__card__bottom__right__btn__right special__content__card-one__bottom__btn hidden">Tarifga ulanish</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular__content__bottom__card">
+                            <div class="popular__content__bottom__card__top">
+                                <span class="popular__content__bottom__card__top__title">Muloqot</span>
+                                <a href="#" class="popular__content__bottom__card__top__btn">CDMA TARIFLAR</a>
+                            </div>
+                            <div class="popular__content__bottom__card__center">
+                                <span class="popular__content__bottom__card__center__text"><img src="./media/tariflar/tarif1.svg" alt="img"> Cheksiz daqiqa</span>
+                                <span class="popular__content__bottom__card__center__text"><img src="./media/tariflar/tarif2.svg" alt="img"> Cheksiz SMS</span>
+                                <span class="popular__content__bottom__card__center__text"><img src="./media/tariflar/tarif3.svg" alt="img"> 5 000 MB</span>
+                            </div>
+                            <div class="popular__content__bottom__card__bottom">
+                                <div class="popular__content__bottom__card__bottom__left">
+                                    <p class="popular__content__bottom__card__bottom__left__top">79 000 UZS</p>
+                                    <p class="popular__content__bottom__card__bottom__left__bottom">Oylik to’lovi</p>
+                                </div>
+                                <div class="popular__content__bottom__card__bottom__right">
+                                    <a href="#" class="popular__content__bottom__card__bottom__right__btn__left">Batafsil</a>
+                                    <a href="#" class="popular__content__bottom__card__bottom__right__btn__right special__content__card-one__bottom__btn hidden">Tarifga ulanish</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular__content__bottom__card">
+                            <div class="popular__content__bottom__card__top">
+                                <span class="popular__content__bottom__card__top__title">Gamer</span>
+                                <a href="#" class="popular__content__bottom__card__top__btn">GSM TARIFLAR</a>
+                            </div>
+                            <div class="popular__content__bottom__card__center">
+                                <span class="popular__content__bottom__card__center__text"><img src="./media/tariflar/tarif1.svg" alt="img"> 120 daqiqa</span>
+                                <span class="popular__content__bottom__card__center__text"><img src="./media/tariflar/tarif2.svg" alt="img"> 100 SMS</span>
+                                <span class="popular__content__bottom__card__center__text"><img src="./media/tariflar/tarif3.svg" alt="img"> 120 000 MB</span>
+                            </div>
+                            <div class="popular__content__bottom__card__bottom">
+                                <div class="popular__content__bottom__card__bottom__left">
+                                    <p class="popular__content__bottom__card__bottom__left__top">119 000 UZS</p>
+                                    <p class="popular__content__bottom__card__bottom__left__bottom">Oylik to’lovi</p>
+                                </div>
+                                <div class="popular__content__bottom__card__bottom__right">
+                                    <a href="#" class="popular__content__bottom__card__bottom__right__btn__left">Batafsil</a>
+                                    <a href="#" class="popular__content__bottom__card__bottom__right__btn__right special__content__card-one__bottom__btn hidden">Tarifga ulanish</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="info">
+        <div class="container">
+            <div class="info__content">
+                <div class="info__content__card">
+                    <h2 class="info__content__card__top">Yangiliklar</h2>
+                    <div class="info__content__card__center">
+                        <div class="slideShow__container">
+                            <div class="slideShow">
+                                <p class="info__content__card__center__title">Uzmobile xizmatlariga ulanganda ID-kartalarni ham qabul qiladi!</p>
+                                <p class="info__content__card__center__text">"O‘zbektelekom" AK "Elektron hukumat
+                                    loyihalarini boshqarish markazi" davlat
+                                    muassasi bilan hamkorlikda UZTELECOM
+                                    mijozlariga barcha xizmatlarini ulashda va
+                                    ulardan foydalanishda shaxsni tasdiqlovchi
+                                    hujjat sifatida identifikatsiya kartasidan
+                                    (ID-karta).
+                                </p>
+                            </div>
+                            <div class="slideShow">
+                                <p class="info__content__card__center__title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, expedita?</p>
+                                <p class="info__content__card__center__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam pariatur enim cumque est accusantium quas, sint tempore maxime dolorum ea provident, laudantium maiores veniam nihil eius reiciendis sit reprehenderit explicabo.</p>
+                            </div>
+                            <div class="slideShow">
+                                <p class="info__content__card__center__title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, natus.</p>
+                                <p class="info__content__card__center__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam sit molestias omnis illum, nobis, unde aperiam quae soluta voluptates corrupti, blanditiis similique exercitationem quo modi inventore ad provident! Saepe culpa molestias </p>
+                            </div>
+                        </div>
+                        <div class="info__content__card__bottom">
+                            <span class="info__content__card__bottom__text">02 Fevral, 2021</span>
+                            <div class="pagination">
+                                <button onclick="plusSlides(-1)"  class="pagination__back"><i class="fa-solid fa-chevron-left"></i></button>
+                                <button onclick="plusSlides(1)" class="pagination__back"><i class="fa-solid fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="info__content__card">
+                    <h2 class="info__content__card__top">Aksiyalar</h2>
+                    <div class="info__content__card__center">
+                        <div class="slideShow__container">
+                            <div class="slideShow__one">
+                                <p class="info__content__card__center__title">"CHIROYLI" raqamni qayta
+                                    rasmiylashtirish uchun 90 %
+                                    chegirma!</p>
+                                <p class="info__content__card__center__text">Yangi yil eshik qoqmoqda, biz esa abonentlarimizni ajoyib yangiliklar bilan xursand qilishda davom etamiz. Abonentlarimizning ko‘plab iltimoslariga ko‘ra, yangi yilda ham “MyUZTELECOM mobil ilovasidan foydalaning va bonusli Internet-paketlarga ega bo‘ling”
+                                </p>
+                            </div>
+                            <!-- <div class="slideShow__one">
+                                <p class="info__content__card__center__title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, expedita?</p>
+                                <p class="info__content__card__center__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam pariatur enim cumque est accusantium quas, sint tempore maxime dolorum ea provident, laudantium maiores veniam nihil eius reiciendis sit reprehenderit explicabo.</p>
+                            </div>
+                            <div class="slideShow__one">
+                                <p class="info__content__card__center__title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, natus.</p>
+                                <p class="info__content__card__center__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam sit molestias omnis illum, nobis, unde aperiam quae soluta voluptates corrupti, blanditiis similique exercitationem quo modi inventore ad provident! Saepe culpa molestias </p>
+                            </div> -->
+                        </div>
+                        <div class="info__content__card__bottom">
+                            <span class="info__content__card__bottom__text">02 Fevral, 2021</span>
+                            <div class="pagination">
+                                <button onclick="plusSlidesOne(-1)" class="pagination__back pagination__back1"><i class="fa-solid fa-chevron-left"></i></button>
+                                <button onclick="plusSlidesOne(1)" class="pagination__back pagination__back1"><i class="fa-solid fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="info__content__card">
+                    <h2 class="info__content__card__top">Xabarnomalar</h2>
+                    <div class="info__content__card__center">
+                        <div class="slideShow__container">
+                           <!--  <div class="slideShow__one"> -->
+                                <p class="info__content__card__center__title">"Smart Mobile Group" MCHJ
+                                    xizmat narxida o‘zgartirishlar </p>
+                                <p class="info__content__card__center__text">"O‘zbektelekom" AK "Elektron hukumat loyihalarini boshqarish markazi" davlat muassasi bilan hamkorlikda UZTELECOM mijozlariga barcha xizmatlarini ulashda va ulardan foydalanishda shaxsni tasdiqlovchi hujjat sifatida identifikatsiya kartasidan (ID-karta).
+                                </p>
+                            <!-- </div> -->
+                            <!-- <div class="slideShow__one">
+                                <p class="info__content__card__center__title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, expedita?</p>
+                                <p class="info__content__card__center__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam pariatur enim cumque est accusantium quas, sint tempore maxime dolorum ea provident, laudantium maiores veniam nihil eius reiciendis sit reprehenderit explicabo.</p>
+                            </div>
+                            <div class="slideShow__one">
+                                <p class="info__content__card__center__title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, natus.</p>
+                                <p class="info__content__card__center__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam sit molestias omnis illum, nobis, unde aperiam quae soluta voluptates corrupti, blanditiis similique exercitationem quo modi inventore ad provident! Saepe culpa molestias </p>
+                            </div> -->
+                        </div>
+                        <div class="info__content__card__bottom">
+                            <span class="info__content__card__bottom__text">02 Fevral, 2021</span>
+                            <div class="pagination">
+                                <button onclick="plusSlidesOne(-1)" class="pagination__back"><i class="fa-solid fa-chevron-left"></i></button>
+                                <button onclick="plusSlidesOne(1)" class="pagination__back"><i class="fa-solid fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="location">
+        <div class="container">
+            <div class="location__top">
+                <span class="location__top__title">Bizning filiallarimiz</span>
+                <div class="location__top__office">
+                    <div class="location__top__office__top">
+                        <div id="select__text">Toshkent shahri</div>
+                        <div class="rotate__icon"><i class="fa-solid fa-chevron-down" ></i></div>
+                    </div>
+                    <div id="select" class="location__top__office__bottom">
+                        <p id="option">Toshkent shahri</p>
+                        <p id="option">Toshkent viloyati</p>
+                        <p id="option">Aandijon viloyati</p>
+                        <p id="option">Farg'ona viloyati</p>
+                        <p id="option">Namangan viloyati</p>
+                        <p id="option">Sirdaryo viloyati</p>
+                        <p id="option">Jizzax viloyati</p>
+                        <p id="option">Samarqand viloyati</p>
+                        <p id="option">Buxoro viloyati</p>
+                        <p id="option">Qashqadaryo viloyati</p>
+                        <p id="option">Surxondaryo viloyati</p>
+                        <p id="option">Navoiy viloyati</p>
+                        <p id="option">Xorazm viloyati</p>
+                        <p id="option">Qoraqalpog'iston</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="location__bottom"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.3430367089777!2d69.21052281479308!3d41.27963811063193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8a3e8934c255%3A0xc859c550a6c5c35f!2sMilliy%20stadioni!5e0!3m2!1suz!2s!4v1671126424252!5m2!1suz!2s" width="100%" height="600" style="border:0;" allowfullscreen=""></iframe></div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__top">
+                    <div class="footer__top__line-one">
+                        <p class="footer__top__line__title title">Biz bilan bog'laning</p>
+                        <div class="footer__top__line-one__content">
+                            <img src="./media/tariflar/tarif1.svg" class="footer__top__line-one__content__img" alt="img">
+                            <span class="footer__top__line-one__content__text">1084</span>
+                        </div>
+                        <p class="footer__top__line-one__text">Internet va IPTV xizmatlari bo'yicha</p>
+                        <div class="footer__top__line-one__content">
+                            <img src="./media/tariflar/tarif1.svg" class="footer__top__line-one__content__img" alt="img">
+                            <span class="footer__top__line-one__content__text">1082</span>
+                        </div>
+                        <p class="footer__top__line-one__text">Telefon ta’mirlash bo’limi</p>
+                        <div class="footer__top__line-one__content">
+                            <img src="./media/tariflar/tarif1.svg" class="footer__top__line-one__content__img" alt="img">
+                            <span class="footer__top__line-one__content__text">1055</span>
+                        </div>
+                        <p class="footer__top__line-one__text">Mobil aloqa bo'yicha</p>
+                        <div class="footer__top__line-one__content">
+                            <img src="./media/tariflar/tarif1.svg" class="footer__top__line-one__content__img" alt="img">
+                            <span class="footer__top__line-one__content__text">1048</span>
+                        </div>
+                        <p class="footer__top__line-one__text">Korporativ mijozlar uchun</p>
+                    </div>
+                    <div class="footer__top__line-two">
+                        <p class="footer__top__line__title">Jismoniy shaxslarga</p>
+                        <a href="#" class="footer__top__line-two__link">GSM tariflar</a>
+                        <a href="#" class="footer__top__line-two__link">CDMA tariflar</a>
+                        <a href="#" class="footer__top__line-two__link">Mobil internet</a>
+                        <a href="#" class="footer__top__line-two__link">Internet</a>
+                        <a href="#" class="footer__top__line-two__link">IPTV</a>
+                        <a href="#" class="footer__top__line-two__link">Qanday ulanish</a>
+                        <a href="#" class="footer__top__line-two__link">Telefon va qurilmalar</a>
+                        <a href="#" class="footer__top__line-two__link">Boshqa xizmatlar</a>
+                    </div>
+                    <div class="footer__top__line-two">
+                        <p class="footer__top__line__title">«O‘zbektelekom» AK</p>
+                        <a href="#" class="footer__top__line-two__link">Kompaniya haqida</a>
+                        <a href="#" class="footer__top__line-two__link">Korporativ boshqaruv</a>
+                        <a href="#" class="footer__top__line-two__link">Matbuot-markazi</a>
+                        <a href="#" class="footer__top__line-two__link">Vakansiyalar</a>
+                        <a href="#" class="footer__top__line-two__link">Ofislar va Filiallar</a>
+                        <a href="#" class="footer__top__line-two__link">Muloqot ma’lumoti</a>
+                        <a href="#" class="footer__top__line-two__link">Huquqiy axborot</a>
+                        <a href="#" class="footer__top__line-two__link">Ommaviy ofеrta</a>
+                    </div>
+                    <div class="footer__top__line-two">
+                        <p class="footer__top__line__title">Operatorlarga</p>
+                        <a href="#" class="footer__top__line-two__link">Ovozli aloqa – Interkonnekt</a>
+                        <a href="#" class="footer__top__line-two__link">Xalqaro Internet kanallariga kirish</a>
+                        <a href="#" class="footer__top__line-two__link">Aloqa kanallarini ijaraga berish</a>
+                        <a href="#" class="footer__top__line-two__link">Kabel kanalizatsiyasini ijara</a>
+                        <a href="#" class="footer__top__line-two__link">Colocation</a>
+                        <div>
+                            <p class=" title__apps">Uzmobile ilovasini yuklab oling</p>
+                            <div class="footer__top__line-two__media">
+                                <a href="#" class="media"><i class="fa-brands fa-google-play"></i> Google play</a>
+                                <a href="#" class="media"><i class="fa-brands fa-apple"></i> App store</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__responsive">
+                    <div>
+                        <p class=" title__apps">Uzmobile ilovasini yuklab oling</p>
+                        <div class="footer__top__line-two__media">
+                            <a href="#" class="media"><i class="fa-brands fa-google-play"></i> Google play</a>
+                            <a href="#" class="media"><i class="fa-brands fa-apple"></i> App store</a>
+                        </div>
+                    </div>
+                    <div class="footer__responsive__connect">
+                        <div class="footer__top__line-one__content">
+                            <img src="./media/tariflar/tarif1.svg" class="footer__top__line-one__content__img" alt="img">
+                            <span class="footer__top__line-one__content__text">1084</span>
+                        </div>
+                        <div class="footer__top__line-one__content">
+                            <img src="./media/tariflar/tarif1.svg" class="footer__top__line-one__content__img" alt="img">
+                            <span class="footer__top__line-one__content__text">1082</span>
+                        </div>
+                        <div class="footer__top__line-one__content">
+                            <img src="./media/tariflar/tarif1.svg" class="footer__top__line-one__content__img" alt="img">
+                            <span class="footer__top__line-one__content__text">1055</span>
+                        </div> 
+                    </div>
+                    <div class="footer__responsive__selects">
+                        <select name="" id="footer__select">
+                            <option  value=""><p class="footer__top__line__title">Jismoniy shaxslarga</p></option>
+                            <option value=""><a href="index.html" class="footer__top__line-two__link">GSM tariflar</a></option>
+                            <option value=""><a href="#" class="footer__top__line-two__link">CDMA tariflar</a></option>
+                            <option value=""><a href="#" class="footer__top__line-two__link">Mobil internet</a></option>
+                            <option value=""><a href="#" class="footer__top__line-two__link">Internet</a></option>
+                            <option value=""><a href="#" class="footer__top__line-two__link">IPTV</a></option>
+                            <option value=""><a href="#" class="footer__top__line-two__link">Qanday ulanish</a></option>
+                            <option value=""><a href="#" class="footer__top__line-two__link">Telefon va Quriulmalar</a></option>
+                            <option value=""><a href="#" class="footer__top__line-two__link">Boshqa xizmatlar</a></option>
+                        </select>
+                    
+                        <select name="" id="footer__select">
+                            <option value=""><p class="footer__top__line__title">«O‘zbektelekom» AK</p></option>
+                            <option value=""><a href="index.html" class="footer__top__line-two__link">Kompaniya haqida</a></option>
+                            <option value=""><a href="#" class="footer__top__line-two__link">Korporativ boshqaruv</a></option>
+                            <option value=""><a href="#" class="footer__top__line-two__link">Matbuot-markazi</a></option>
+                            <option value=""><a href="#" class="footer__top__line-two__link">Vakansiyalar</a></option>
+                            <option value=""><a href="#" class="footer__top__line-two__link">Ofislar va Filiallar</a></option>
+                            <option value=""><a href="#" class="footer__top__line-two__link">Muloqot ma’lumoti</a></option>
+                            <option value=""><a href="#" class="footer__top__line-two__link">Huquqiy axborot</a></option>
+                            <option value=""><a href="#" class="footer__top__line-two__link">Ommaviy ofеrta</a></option>
+                        </select>
+                    
+                        <select name="" id="footer__select">
+                            <option value=""><p class="footer__top__line__title">Operatorlarga</p></option>
+                            <option value=""><a href="index.html" class="footer__top__line-two__link">Ovozli aloqa – Interkonnekt</a></option>
+                            <option value=""><a href="#" class="footer__top__line-two__link">Xalqaro Internet kanallariga kirish</a></option>
+                            <option value=""><a href="#" class="footer__top__line-two__link">Aloqa kanallarini ijaraga berish</a></option>
+                            <option value=""><a href="#" class="footer__top__line-two__link">Kabel kanalizatsiyasini ijara</a></option>
+                            <option value=""><a href="#" class="footer__top__line-two__link">Colocation</a></option>
+                            
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__bottom__left">© 2001—2021 O'zbektelekom. Barcha xizmatlar litsenziyalangan.</div>
+                <div class="footer__bottom__right">
+                    <a href="#" class="footer__bottom__right__media"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="footer__bottom__right__media"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="footer__bottom__right__media"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="footer__bottom__right__media"><i class="fa-brands fa-telegram"></i></a>
+                </div>
+            </div>
+            <div class="footer__bottom__responsive">
+                <div class="footer__bottom__right">
+                    <a href="#" class="footer__bottom__right__media"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="footer__bottom__right__media"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="footer__bottom__right__media"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="footer__bottom__right__media"><i class="fa-brands fa-telegram"></i></a>
+                </div>
+                <div class="footer__bottom__left footer__bottom__left__title">© 2001—2021 O'zbektelekom.</div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+</body>
+</html>

@@ -175,6 +175,25 @@ a{
     /* gap: 10px; */
     display: none;
     transition: 1s;
+    align-items: center;
+}
+
+.header__bottom__bar__search{
+    /* display: flex; */
+    gap: 5px;
+    align-items: center;
+    padding: 9.5px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid aqua;
+    display: none;
+    transition: 8s;
+}
+
+.header__bottom__bar__search__input{
+    border: none;
+    outline: none;
+    width: 500px;
 }
 
 /* navbar style */
@@ -183,19 +202,22 @@ a{
     position: fixed;
     top: 0px;
     left: 0px;
-    width: 0;
+    width: 75%;
     height: 100%;
     background-color: #fff;
     z-index: 99;
-    /* display: flex; */
+    display: flex;
     flex-direction: column;
     gap: 30px;
-    display: none;
     text-align: center;
     padding: 50px;
-    transition: 1s;
+    transition: 0.8s;
+    transform: translatex(-100%);
     border-right: 2px solid #000;
+   
 }
+
+
 
 .navbar__close{
     position: absolute;
@@ -807,6 +829,11 @@ button{
    display: flex;
    align-items: center;
    justify-content: center;
+   transition: 0.4s;
+}
+
+.pagination__back:hover{
+    background-color: #999;
 }
 
 /* location style */
@@ -830,8 +857,9 @@ button{
     line-height: 48px;
     letter-spacing: -0.02em;
     color: #000000;
-    
+    transition: 0.4s;
 }
+
 
 .location__top__office__top{
     font-weight: 600;
@@ -844,6 +872,10 @@ button{
     cursor: pointer;
 }
 
+.location__top__office__top:hover{
+    color: #089a3b;
+}
+
 .rotate__icon{
     transition: 0.3s;
 }
@@ -854,11 +886,12 @@ button{
     margin-top: 20px;
     background-color: #fff;
     border-radius: 10px;
-    transition: all 0.3s;
+    transition: all 1s;
     display: none;
 }
 
 .place-card{
+
     display: none;
 }
 
@@ -1136,10 +1169,17 @@ button{
 
     .header__bottom{
         padding: 20px 30px;
+        
     }
+
+    
 
     .header__bottom__search{
         display: none;
+    }
+
+    .header__bottom__bar__search__input{
+        width: 595px;
     }
 
     .header__bottom__right__icon{
@@ -1231,9 +1271,7 @@ button{
         display: none;
     }
 
-    .header__bottom__search__input{
-        width: 200px;
-    }
+    
 
 }
 
@@ -1246,6 +1284,7 @@ button{
     .navbar{
         padding:50px 25px;
         width: 75%;
+        transition: 0.6s;
     }
 
     .navbar__box{
@@ -1254,6 +1293,10 @@ button{
 
     .header__bottom__right{
         display: none;
+    }
+
+    .header__bottom__bar__search__input{
+        width: 250px;
     }
 
     .hero__title{
@@ -1400,6 +1443,10 @@ button{
         width: 300px;
     }
 
+    .header__bottom__bar__search__input{
+        width: 210px;
+    }
+
     .special__content__card{
         padding: 29px 15px 29px 15px;
     }
@@ -1411,6 +1458,7 @@ button{
     .navbar{
         padding: 50px 20px;
         width: 75%;
+        transition: 0.5s;
     }
 
     .navbar__box{

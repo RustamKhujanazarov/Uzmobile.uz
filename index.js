@@ -26,35 +26,49 @@ const header__bottom__bar = document.getElementsByClassName("header__bottom__bar
 
 
 function openNav() {
-  navbar.style.width = "75%";
-  navbar.style.display = "flex";
   document.getElementsByTagName("body")[0].style.overflow = "hidden";
+  navbar.style.transform = "translatex(0%)"
 };
 
 function closeNav() {
-  navbar.style.width = "0";
-  navbar.style.display = "none";
+  navbar.style.transform = "translatex(-100%)";
   document.getElementsByTagName("body")[0].style.overflow = "scroll";
+  
+  
 };
 
 headerBottomBar.addEventListener("click", () =>{
-  if(navbar.style.display ==="none"){
+  if(navbar.style.transform = "translatex(-100%)"){
     openNav()
   }
   else{
+    navbar.style.transform = "translatex(-100%)";
     closeNav()
   }
 })
 
-// searchButton.addEventListener("click", () =>{
-//   if(search.style.display = "none"){
-//     // search.style.margin = "0px 30px 0 0"
-//     search.style.display = "flex";
-//     header__bottom__bar.style.display = "none";
-//   }
+const header__bottom__bar__search = document.getElementsByClassName("header__bottom__bar__search")[0];
+const logo = document.getElementsByClassName("logo")[0];
+const headerBottom = document.getElementsByClassName("header__bottom")[0];
+
+searchButton.addEventListener("click", () =>{
+  if(header__bottom__bar__search.style.display == "none"){
+    header__bottom__bar__search.style.display = "flex";
+    logo.style.display ="none";
+    searchButton.innerHTML = `<i class="fa-solid fa-xmark"></i>`
+    headerBottom.style.justifyContent = "end";
+    
+  }
+
+  else{
+    header__bottom__bar__search.style.display = "none";
+    logo.style.display ="block";
+    searchButton.innerHTML = `<i class="fa-solid fa-magnifying-glass"></i>`
+    headerBottom.style.justifyContent = "space-between";
+  }
   
-//   console.log("salom");
-// })
+  // console.log("salom");
+})
 
 
 
@@ -64,23 +78,22 @@ searchBtn.addEventListener("click", () => {
     search.style.display = "flex";
   }
   
-  console.log("salom");
+  // console.log("salom");
 });
 
 let closeSearchButton = document.getElementsByClassName("header__bottom__search__close")[0];
 
 closeSearchButton.addEventListener("click", () => {
-  // if(window.innerWidth,"768px")
   console.log(window.innerWidth,"widht")
   if(headerBottomRight.style.display = "none", search.style.display = "flex"){
     headerBottomRight.style.display = "flex"; 
     search.style.display = "none";
-    // header__bottom__bar.style.display = "block";
+   
     
   }
 
   
-  console.log("salom");
+  // console.log("salom");
 });
 
 addPopular.addEventListener("click", () =>{
@@ -95,7 +108,7 @@ addPopular.addEventListener("click", () =>{
     addPopular.innerText = "Barchasi"
     addPopular.classList.replace("close", "popular__content__top__link")
   }
-  console.log('salom');
+  // console.log('salom');
 });
 
 tv.addEventListener("click", () => {
@@ -109,7 +122,7 @@ tv.addEventListener("click", () => {
     <label for="">h/r:</label>
     <input type="number" placeholder="x/r kiriting.." maxlength="9">
   `
-  console.log("salom");
+  // console.log("salom");
 });
 
 mobile.addEventListener("click", () => {
@@ -147,7 +160,7 @@ locationTop.addEventListener("click", () =>{
     select.style.display = "none"
     chevronDown.style.transform = "rotate(0deg)"
   }
-  console.log("salom");
+  // console.log("salom");
 });
 
 
@@ -155,7 +168,7 @@ option.forEach((region) => {
     region.addEventListener("click", () => {
     selectText.innerHTML=region.innerHTML;
     select.style.display = "none"
-    console.log('ishladi');
+    // console.log('ishladi');
     chevronDown.style.transform = "rotate(-0deg)"
   });
 });
@@ -167,7 +180,7 @@ langTop.addEventListener("click", () =>{
   else{
     langBottom.style.display = "none"
   }
-  console.log("salom");
+  // console.log("salom");
 });
 
 
@@ -175,7 +188,7 @@ lang.forEach((langu) => {
   langu.addEventListener("click", () => {
     uzbek.innerHTML=langu.innerHTML;
     langBottom.style.display = "none";
-    console.log('ishladi');
+    // console.log('ishladi');
 });
 });
 

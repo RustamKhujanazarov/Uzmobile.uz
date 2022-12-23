@@ -822,7 +822,7 @@ button{
     gap: 16px;
 }
 
-.pagination__back{
+.pagination__back, .pagination__next, .pagination__back-one, .pagination__next-one {
     width: 48px;
     height: 48px;
     border-radius: 50%;
@@ -832,7 +832,7 @@ button{
    transition: 0.4s;
 }
 
-.pagination__back:hover{
+.pagination__back:hover, .pagination__next:hover, .pagination__back-one:hover, .pagination__next-one:hover  {
     background-color: #999;
 }
 

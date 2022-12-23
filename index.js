@@ -196,19 +196,46 @@ lang.forEach((langu) => {
 
 let slideIndex = 1;
 showSlides(slideIndex);
+let paginationBack = document.querySelectorAll(".pagination__back");
+let paginationNext = document.querySelectorAll(".pagination__next");
+
+
+// paginationBack.forEach((back) => {
+//   back.addEventListener("click", () => {
+//     let n = -1
+//     showSlides(slideIndex += n);
+//   })
+// })
+
+// paginationNext.forEach((next) => {
+//   next.addEventListener("click", () => {
+//     let n=1
+//     showSlides(slideIndex += n);
+//   })
+// })
+
+// slideShow.forEach((show) =>{
+//   let i;
+//   // let slideShow = document.querySelectorAll(".slideShow");
+//   if (n > slideShow.length) {slideIndex = 1}    
+//   if (n < 1) {slideIndex = slideShow.length}
+//   for (i = 0; i < slideShow.length; i++) {
+//     slideShow[i].style.display = "none";  
+//   }
+  
+// slideShow[slideIndex-1].style.display = "block";  
+
+// })
 
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+  showSlides(slideIndex+= n);
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+
 
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("slideShow");
-  // let dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
@@ -219,16 +246,11 @@ function showSlides(n) {
 
 };
 
+
 let slideIndexOne = 1;
 showSlidesOne(slideIndexOne);
 
-function plusSlidesONe(n) {
-  showSlidesOne(slideIndexOne += n);
-}
 
-function currentSlidesOne(n) {
-  showSlidesOne(slideIndexOne = n);
-}
 
 function showSlidesOne(n) {
   let i;
@@ -241,6 +263,35 @@ function showSlidesOne(n) {
   }
   
   slidesOne[slideIndexOne-1].style.display = "block";  
+
+};
+
+function plusSlidesONe(n) {
+  showSlidesOne(slideIndexOne += n);
+}
+
+// let slideIndexTwo = 1;
+// showSlidesTwo(slideIndexTwo);
+
+// function plusSlidesTwo(n) {
+//   showSlidesTwo(slideIndexTwo += n);
+// }
+
+// function currentSlideTwo(n) {
+//   showSlidesTwo(slideIndexTwo = n);
+// }
+
+function showSlidesTwo(n) {
+  let i;
+  let slidesTwo = document.getElementsByClassName("slideShow__Two");
+  // let dots = document.getElementsByClassName("dot");
+  if (n > slidesTwo.length) {slideIndexTwo = 1}    
+  if (n < 1) {slideIndexTwo = slidesTwo.length}
+  for (i = 0; i < slidesTwo.length; i++) {
+    slidesTwo[i].style.display = "none";  
+  }
+  
+  slidesTwo[slideIndexTwo-1].style.display = "block";  
 
 };
 
